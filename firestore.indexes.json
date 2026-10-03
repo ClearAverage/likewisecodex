@@ -1,0 +1,11 @@
+{
+  "indexes": [],
+  "fieldOverrides": [
+    {"collectionGroup":"classes","fieldPath":"choices","indexes":[]},
+    {"collectionGroup":"classes","fieldPath":"members","indexes":[]},
+    {"collectionGroup":"classes","fieldPath":"pending","indexes":[]},
+    {"collectionGroup":"classes","fieldPath":"blocked","indexes":[]},
+    {"collectionGroup":"rateLimits","fieldPath":"expiresAt","ttl":true,"indexes":[]},
+    {"collectionGroup":"profiles","fieldPath":"expiresAt","ttl":true,"indexes":[]}
+  ]
+}

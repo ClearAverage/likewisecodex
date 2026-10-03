@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Every app operation goes through authenticated, App Check protected
+    // Cloud Functions. Admin SDK bypasses these rules and validates each action.
+    // Never grant clients reads of class documents: they contain private choices.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
